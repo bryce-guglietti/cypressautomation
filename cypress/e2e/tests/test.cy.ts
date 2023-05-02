@@ -1,3 +1,4 @@
+import { Given , And , Then , When} from "cypress-cucumber-preprocessor/steps";
 import homePage from "../../pages/homePage"
 import loginPage from "../../pages/loginPage"
 import productPage from "../../pages/productPage"
@@ -42,7 +43,7 @@ it('Create Tests', () =>{
 
     cy.log('Call the Place Order function')
     orderPage.placeOrder();
-    
+
     cy.log('Call the Fill Payment function')
     paymentPage.fillPayment("Joe Brown", "1234123412341234", "999", "12", "2099")
 
