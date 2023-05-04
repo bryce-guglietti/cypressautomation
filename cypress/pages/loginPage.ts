@@ -1,4 +1,4 @@
-class loginPage{
+class LoginPage{
 
     elements ={
         emailField : () => cy.xpath("//div[@class='login-form']/descendant::input[@type='email']"),
@@ -14,7 +14,7 @@ class loginPage{
         cy.log('Successfully logged in')
     }
 }
-export default new loginPage();
+export default new LoginPage();
 require('cypress-xpath')
 
     // cy.xpath("//div[@class='login-form']/descendant::input[@type='email']").type("bryce81@outlook.com")

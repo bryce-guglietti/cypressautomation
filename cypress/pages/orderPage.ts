@@ -1,4 +1,4 @@
-class orderPage{
+class OrderPage{
 
     elements ={
         orderBtn : () => cy.xpath("//a[@class='btn btn-default check_out']")
@@ -9,5 +9,5 @@ class orderPage{
         cy.log('Successfully placed order')
     }
 }
-export default new orderPage();
+export default new OrderPage();
 require('cypress-xpath')

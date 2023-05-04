@@ -1,4 +1,4 @@
-class productPage{
+class ProductPage{
 
     elements ={
         searchBar : () => cy.xpath("//div[@class='container']/descendant::input[@class='form-control input-lg']"),
@@ -20,7 +20,7 @@ class productPage{
         cy.log('Sucessfully added product')
     }
 }
-export default new productPage();
+export default new ProductPage();
 require('cypress-xpath')
 
     // cy.xpath("//div[@class='container']/descendant::input[@class='form-control input-lg']").type("Tshirts")

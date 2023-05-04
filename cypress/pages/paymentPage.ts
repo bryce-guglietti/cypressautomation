@@ -1,4 +1,4 @@
-class paymentPage{
+class PaymentPage{
 
     elements ={
         nameField : () => cy.xpath("//form[@id='payment-form']/descendant::input[@name='name_on_card']"),
@@ -23,7 +23,7 @@ class paymentPage{
         cy.log('Successfully Confirmed Checkout')
     }
 }
-export default new paymentPage();
+export default new PaymentPage();
 require('cypress-xpath')
     // cy.xpath("//form[@id='payment-form']/descendant::input[@name='name_on_card']").type('Joe')
     // cy.xpath("//form[@id='payment-form']/descendant::input[@name='card_number']").type('1234123412341234')
