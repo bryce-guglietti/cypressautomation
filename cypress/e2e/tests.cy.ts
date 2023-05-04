@@ -1,4 +1,4 @@
-import HomePage from "../pages/HomePage"
+import HOMEPAGE from "../pages/HOMEPAGE"
 import LoginPage from "../pages/LoginPage"
 import ProductPage from "../pages/ProductPage"
 import CartPage from "../pages/CartPage"
@@ -10,17 +10,17 @@ it('Create Tests', () =>{
     cy.visit('https://automationexercise.com/')
     cy.log('Visit the target page')
 
-    cy.log('all the HomePage signin')
-    HomePage.clickOnSignin();
+    cy.log('all the HOMEPAGE signin')
+    HOMEPAGE.clickOnSignin();
 
     cy.log('Call the login function')
     LoginPage.login();
     
     cy.log('Ensure the login was successful')
-    HomePage.elements.logoutBtn().should('have.text',' Logout');
+    HOMEPAGE.elements.logoutBtn().should('have.text',' Logout');
 
     cy.log('Call the Product Page Button function')
-    HomePage.clickOnProduct();
+    HOMEPAGE.clickOnProduct();
 
     cy.log('Call Search Product function')
     ProductPage.searchProduct("TShirts");
@@ -32,7 +32,7 @@ it('Create Tests', () =>{
     ProductPage.addProduct("2");
 
     cy.log('Call the Click on Cart Button function')
-    HomePage.clickOnCart();
+    HOMEPAGE.clickOnCart();
 
     cy.log('Call the Delete Product function')
     CartPage.deleteProduct("2");
