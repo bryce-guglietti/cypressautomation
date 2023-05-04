@@ -1,7 +1,7 @@
 import homePage from "../pages/homePage"
 import loginPage from "../pages/loginPage"
 import productPage from "../pages/productPage"
-import cartPage from "../pages/cartPage"
+import CartPage from "../pages/CartPage"
 import paymentPage from "../pages/paymentPage"
 import orderPage from "../pages/orderPage"
 import 'cypress-xpath'
@@ -35,10 +35,10 @@ it('Create Tests', () =>{
     homePage.clickOnCart();
 
     cy.log('Call the Delete Product function')
-    cartPage.deleteProduct("2");
+    CartPage.deleteProduct("2");
 
     cy.log('Call the Checkout function')
-    cartPage.checkout();
+    CartPage.checkout();
 
     cy.log('Call the Place Order function')
     orderPage.placeOrder();

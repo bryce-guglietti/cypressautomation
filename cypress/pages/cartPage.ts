@@ -1,4 +1,4 @@
-class productPage{
+class CartPage{
 
     elements ={
         checkoutBtn : () => cy.xpath("//a[@class='btn btn-default check_out']")
@@ -15,5 +15,5 @@ class productPage{
         cy.log('Successfully clicked Checkout button')
     }
 }
-export default new productPage();
+export default new CartPage();
 require('cypress-xpath')
