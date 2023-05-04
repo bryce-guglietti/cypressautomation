@@ -1,4 +1,4 @@
-class HOMEPAGE{
+class HomePage{
     
     elements ={
         loginBtn : () => cy.xpath('//a[@href="/login"]'),
@@ -24,5 +24,5 @@ class HOMEPAGE{
 
 }
 
-export default new HOMEPAGE();
+export default new HomePage();
 require('cypress-xpath')
