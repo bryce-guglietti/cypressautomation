@@ -1,6 +1,6 @@
 # cypressautomation
 
-## Locations 
+## File Locations 
 
 All code is located in the cypress folder
 
